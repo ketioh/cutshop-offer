@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Collaboration Proposal for Cutshop</title>
+    <title>Collaboration Offer for Cutshop</title>
     <style>
         * {
             margin: 0;
@@ -16,261 +16,269 @@
         }
 
         body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', sans-serif;
-            line-height: 1.6;
-            color: #1a1a1a;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Inter', 'Helvetica Neue', 'Arial', sans-serif;
+            line-height: 1.65;
+            color: #111111;
             background-color: #ffffff;
         }
 
         /* Typography */
         h1 {
-            font-size: 3rem;
-            font-weight: 700;
-            line-height: 1.1;
-            margin-bottom: 0.5rem;
-            letter-spacing: -0.8px;
+            font-size: 48px;
+            font-weight: 600;
+            line-height: 1.15;
+            margin-bottom: 24px;
+            letter-spacing: -0.5px;
         }
 
         h2 {
-            font-size: 1.75rem;
+            font-size: 28px;
             font-weight: 600;
             line-height: 1.3;
-            margin-bottom: 1.5rem;
+            margin-bottom: 32px;
             letter-spacing: -0.3px;
         }
 
         h3 {
-            font-size: 1.1rem;
+            font-size: 16px;
             font-weight: 600;
-            margin-bottom: 0.75rem;
-            color: #000000;
+            margin-bottom: 12px;
+            color: #111111;
         }
 
         p {
-            font-size: 1rem;
-            line-height: 1.7;
+            font-size: 16px;
+            line-height: 1.65;
             color: #333333;
-            margin-bottom: 1.25rem;
+            margin-bottom: 16px;
         }
 
         ul {
-            margin-left: 1.5rem;
-            margin-bottom: 1.25rem;
+            margin-left: 24px;
+            margin-bottom: 16px;
         }
 
         li {
-            font-size: 1rem;
-            line-height: 1.7;
+            font-size: 16px;
+            line-height: 1.65;
             color: #333333;
-            margin-bottom: 0.5rem;
+            margin-bottom: 8px;
         }
 
         a {
-            color: #1a1a1a;
+            color: #111111;
             text-decoration: none;
-            border-bottom: 1px solid #cccccc;
-            transition: border-color 0.2s ease;
+            border-bottom: 1px solid #d0d0d0;
+            transition: all 0.2s ease;
         }
 
         a:hover {
-            border-bottom-color: #1a1a1a;
+            border-bottom-color: #111111;
         }
 
         /* Layout */
         .container {
-            max-width: 800px;
+            max-width: 900px;
             margin: 0 auto;
-            padding: 0 2rem;
+            padding: 0 40px;
         }
 
         section {
-            padding: 5rem 0;
-            border-bottom: 1px solid #f0f0f0;
+            padding: 100px 0;
         }
 
-        section:last-of-type {
-            border-bottom: none;
+        section:first-child {
+            padding-top: 80px;
         }
 
         /* Hero Section */
         .hero {
-            padding: 6rem 0 5rem 0;
+            padding: 80px 0 120px 0;
         }
 
         .hero h1 {
-            margin-bottom: 3rem;
+            margin-bottom: 32px;
+            max-width: 800px;
         }
 
         .hero-subtitle {
-            font-size: 1.1rem;
+            font-size: 18px;
             color: #555555;
-            line-height: 1.8;
-            margin-bottom: 2rem;
-            max-width: 700px;
+            line-height: 1.7;
+            margin-bottom: 24px;
+            max-width: 750px;
+            font-weight: 400;
         }
 
         .hero-intro {
-            font-size: 1rem;
+            font-size: 16px;
             color: #666666;
-            line-height: 1.8;
-            max-width: 700px;
+            line-height: 1.7;
+            max-width: 750px;
+            margin-bottom: 16px;
+        }
+
+        .hero-intro:last-child {
+            margin-bottom: 0;
         }
 
         /* Section Title */
         .section-title {
-            margin-bottom: 2.5rem;
+            margin-bottom: 48px;
         }
 
         .section-title h2 {
-            margin-bottom: 0.75rem;
+            margin-bottom: 16px;
         }
 
         .section-subtitle {
-            font-size: 1rem;
+            font-size: 16px;
             color: #666666;
             font-weight: 400;
             line-height: 1.7;
+            max-width: 750px;
         }
 
         /* Content Block */
         .content-block {
-            margin-bottom: 3rem;
+            max-width: 750px;
         }
 
-        .content-block:last-child {
+        .content-block p {
+            margin-bottom: 16px;
+        }
+
+        .content-block p:last-child {
             margin-bottom: 0;
-        }
-
-        .content-block h3 {
-            margin-bottom: 0.75rem;
-        }
-
-        .content-block > p:first-of-type {
-            color: #555555;
-            font-weight: 500;
-            margin-bottom: 1rem;
-        }
-
-        .content-block ul {
-            margin-bottom: 1.25rem;
         }
 
         /* Cards Grid */
         .cards-grid {
             display: grid;
             grid-template-columns: 1fr 1fr;
-            gap: 2rem;
+            gap: 24px;
             margin-bottom: 0;
         }
 
         .card {
-            padding: 2rem;
+            padding: 32px;
             background-color: #fafafa;
-            border: 1px solid #f0f0f0;
-            border-radius: 3px;
+            border: 1px solid #e8e8e8;
+            border-radius: 8px;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+            transition: all 0.2s ease;
+        }
+
+        .card:hover {
+            border-color: #d0d0d0;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
         }
 
         .card h3 {
-            margin-bottom: 1rem;
+            margin-bottom: 16px;
+            font-size: 16px;
         }
 
         .card p {
-            font-size: 0.95rem;
+            font-size: 15px;
             color: #555555;
-            margin-bottom: 1rem;
+            margin-bottom: 16px;
+            line-height: 1.65;
         }
 
-        .card p:last-child {
+        .card p:last-of-type {
             margin-bottom: 0;
         }
 
         .card ul {
-            margin-left: 1.5rem;
+            margin-left: 24px;
+            margin-bottom: 16px;
+        }
+
+        .card ul:last-child {
             margin-bottom: 0;
         }
 
         .card li {
-            font-size: 0.95rem;
+            font-size: 15px;
             color: #555555;
+            line-height: 1.65;
         }
 
         /* Structure Section */
-        .structure-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 2rem;
-            margin-bottom: 2rem;
+        .structure-section {
+            background-color: #f9f9f9;
+            border: 1px solid #e8e8e8;
+            border-radius: 8px;
+            padding: 48px;
+            margin-bottom: 0;
         }
 
         .structure-item {
-            padding: 1.5rem;
-            background-color: #fafafa;
-            border: 1px solid #f0f0f0;
-            border-radius: 3px;
+            margin-bottom: 40px;
         }
 
-        .structure-item h4 {
-            font-size: 0.9rem;
+        .structure-item:last-child {
+            margin-bottom: 0;
+        }
+
+        .structure-item h3 {
+            font-size: 16px;
             font-weight: 600;
-            color: #999999;
-            text-transform: uppercase;
-            letter-spacing: 0.5px;
-            margin-bottom: 0.75rem;
+            margin-bottom: 16px;
+            color: #111111;
         }
 
         .structure-item p {
-            font-size: 1.1rem;
-            font-weight: 600;
-            color: #000000;
-            margin-bottom: 0;
-        }
-
-        .structure-focus {
-            padding: 1.5rem;
-            background-color: #fafafa;
-            border: 1px solid #f0f0f0;
-            border-radius: 3px;
-        }
-
-        .structure-focus h4 {
-            font-size: 0.9rem;
-            font-weight: 600;
-            color: #999999;
-            text-transform: uppercase;
-            letter-spacing: 0.5px;
-            margin-bottom: 1rem;
-        }
-
-        .structure-focus ul {
-            margin-left: 1.5rem;
-            margin-bottom: 0;
-        }
-
-        .structure-focus li {
-            font-size: 0.95rem;
+            font-size: 15px;
             color: #555555;
+            margin-bottom: 12px;
+            line-height: 1.65;
+        }
+
+        .structure-item p:last-child {
+            margin-bottom: 0;
+        }
+
+        .structure-item ul {
+            margin-left: 24px;
+            margin-bottom: 0;
+        }
+
+        .structure-item li {
+            font-size: 15px;
+            color: #555555;
+            line-height: 1.65;
+            margin-bottom: 8px;
+        }
+
+        .structure-item li:last-child {
+            margin-bottom: 0;
         }
 
         /* About Section */
         .about-content {
-            max-width: 700px;
+            max-width: 750px;
         }
 
         .about-content p {
-            margin-bottom: 1.25rem;
+            margin-bottom: 16px;
+        }
+
+        .about-content p:last-child {
+            margin-bottom: 0;
         }
 
         /* Links Section */
         .links-section {
-            padding: 3rem 0;
-            border-top: 1px solid #f0f0f0;
-            border-bottom: none;
+            padding: 80px 0;
+            border-top: 1px solid #e8e8e8;
         }
 
         .links-grid {
             display: grid;
             grid-template-columns: 1fr 1fr 1fr;
-            gap: 2rem;
+            gap: 48px;
         }
 
         .link-item {
@@ -278,127 +286,162 @@
         }
 
         .link-item p {
-            font-size: 0.9rem;
-            color: #999999;
+            font-size: 12px;
+            color: #888888;
             text-transform: uppercase;
-            letter-spacing: 0.5px;
-            margin-bottom: 0.75rem;
+            letter-spacing: 0.8px;
+            margin-bottom: 12px;
+            font-weight: 600;
         }
 
         .link-item a {
-            font-size: 1rem;
-            color: #1a1a1a;
-            border-bottom: 1px solid #cccccc;
+            font-size: 16px;
+            color: #111111;
+            border-bottom: 1px solid #d0d0d0;
         }
 
         /* Footer */
         footer {
-            padding: 4rem 0;
+            padding: 60px 0;
             text-align: center;
-            border-top: 1px solid #f0f0f0;
-            margin-top: 2rem;
+            border-top: 1px solid #e8e8e8;
         }
 
         footer p {
-            font-size: 0.9rem;
-            color: #999999;
-            margin-bottom: 0.5rem;
+            font-size: 14px;
+            color: #888888;
+            margin-bottom: 8px;
         }
 
         footer .name {
             font-weight: 600;
-            color: #333333;
-            margin-bottom: 0.25rem;
+            color: #111111;
+            font-size: 16px;
+            margin-bottom: 4px;
         }
 
         footer .location {
-            font-size: 0.85rem;
-            color: #cccccc;
+            font-size: 13px;
+            color: #aaaaaa;
         }
 
         /* Responsive */
         @media (max-width: 768px) {
+            .container {
+                padding: 0 32px;
+            }
+
             h1 {
-                font-size: 2.2rem;
+                font-size: 36px;
+                margin-bottom: 20px;
             }
 
             h2 {
-                font-size: 1.5rem;
-            }
-
-            .container {
-                padding: 0 1.5rem;
+                font-size: 24px;
+                margin-bottom: 24px;
             }
 
             section {
-                padding: 3.5rem 0;
+                padding: 60px 0;
             }
 
             .hero {
-                padding: 3.5rem 0 3rem 0;
+                padding: 60px 0 80px 0;
+            }
+
+            .hero-subtitle {
+                font-size: 16px;
+                margin-bottom: 20px;
             }
 
             .cards-grid {
                 grid-template-columns: 1fr;
-                gap: 1.5rem;
+                gap: 20px;
             }
 
-            .structure-grid {
-                grid-template-columns: 1fr;
-                gap: 1.5rem;
+            .card {
+                padding: 24px;
+            }
+
+            .structure-section {
+                padding: 32px;
+            }
+
+            .structure-item {
+                margin-bottom: 32px;
             }
 
             .links-grid {
                 grid-template-columns: 1fr;
-                gap: 1.5rem;
+                gap: 32px;
             }
 
-            .card,
-            .structure-item,
-            .structure-focus {
-                padding: 1.5rem;
+            .links-section {
+                padding: 60px 0;
             }
 
-            p {
-                font-size: 0.95rem;
-            }
-
-            li {
-                font-size: 0.95rem;
+            footer {
+                padding: 40px 0;
             }
         }
 
         @media (max-width: 480px) {
+            .container {
+                padding: 0 20px;
+            }
+
             h1 {
-                font-size: 1.75rem;
+                font-size: 28px;
+                margin-bottom: 16px;
             }
 
             h2 {
-                font-size: 1.25rem;
-            }
-
-            .container {
-                padding: 0 1rem;
-            }
-
-            section {
-                padding: 2.5rem 0;
-            }
-
-            .hero {
-                padding: 2.5rem 0 2rem 0;
-            }
-
-            .hero-subtitle {
-                font-size: 1rem;
+                font-size: 20px;
+                margin-bottom: 20px;
             }
 
             p {
-                font-size: 0.9rem;
+                font-size: 15px;
             }
 
             li {
-                font-size: 0.9rem;
+                font-size: 15px;
+            }
+
+            section {
+                padding: 40px 0;
+            }
+
+            .hero {
+                padding: 40px 0 60px 0;
+            }
+
+            .hero-subtitle {
+                font-size: 15px;
+            }
+
+            .card {
+                padding: 20px;
+            }
+
+            .structure-section {
+                padding: 24px;
+            }
+
+            .structure-item {
+                margin-bottom: 24px;
+            }
+
+            .links-grid {
+                gap: 24px;
+            }
+
+            .links-section {
+                padding: 40px 0;
+            }
+
+            footer {
+                padding: 32px 0;
             }
         }
     </style>
@@ -407,7 +450,7 @@
     <div class="container">
         <!-- Hero Section -->
         <section class="hero">
-            <h1>Collaboration Proposal<br>for Cutshop</h1>
+            <h1>Collaboration Offer for Cutshop</h1>
             <p class="hero-subtitle">After our conversation I spent some time thinking about the potential of Cutshop and how I could contribute to its development and growth.</p>
             <p class="hero-intro">From what I've seen so far, the technical foundation you're building is very strong. The opportunity ahead is to make sure that this infrastructure evolves into a product people clearly understand, adopt, and build businesses around.</p>
             <p class="hero-intro">What follows is how I see my potential involvement and the value I believe I can bring, based on what truly motivates me, where my expertise is strongest, and what I understand the project needs in order to succeed.</p>
@@ -505,39 +548,47 @@
         <section>
             <h2>Structure</h2>
             
-          <div class="structure-grid">
-  <div class="structure-item">
-    <h4>Position</h4>
-    <p>Product &amp; Strategy</p>
-  </div>
+            <div class="structure-section">
+                <div class="structure-item">
+                    <h3>Scope</h3>
+                    <p>The exact scope of the role can evolve as the project develops.</p>
+                </div>
 
-  <div class="structure-item">
-    <h4>Scope</h4>
-    <p>The exact title and scope can evolve as the project develops.</p>
-  </div>
-</div>
+                <div class="structure-item">
+                    <h3>Position</h3>
+                    <p>Head of Growth and Strategy</p>
+                </div>
 
-<div class="structure-grid">
-  <div class="structure-item">
-    <h4>Part time involvement</h4>
-    <p><strong>Monthly compensation:</strong> $2,500</p>
-    <p>This includes approximately 15 to 20 hours per week of involvement.</p>
-    <p>If the project requires additional work beyond this level, extra hours can be billed at $35/hour.</p>
-  </div>
+                <div class="structure-item">
+                    <h3>Work Format</h3>
+                    <p>Hybrid collaboration with a minimum of 2 days per week at the office.</p>
+                </div>
 
-  <div class="structure-item">
-    <h4>Full time involvement</h4>
-    <p><strong>Monthly compensation:</strong> $5,000</p>
-    <p>Approximate involvement: up to ~40 hours per week.</p>
-  </div>
-</div>
+                <div class="structure-item">
+                    <h3>Compensation</h3>
+                    
+                    <p><strong>Part time involvement</strong></p>
+                    <ul>
+                        <li>Up to 20 hours per week</li>
+                        <li>$2,800 gross per month</li>
+                    </ul>
 
-<div class="structure-grid">
-  <div class="structure-item">
-    <h4>Review</h4>
-    <p>After approximately 6 months, we can review the structure and adjust it based on how the project evolves.</p>
-  </div>
-</div>
+                    <p><strong>Full time involvement</strong></p>
+                    <ul>
+                        <li>Up to 40 hours per week</li>
+                        <li>$5,600 gross per month</li>
+                    </ul>
+
+                    <p><strong>Hourly option</strong></p>
+                    <p>Alternatively, work can be billed at $35 gross per hour if a more flexible structure is preferred.</p>
+                </div>
+
+                <div class="structure-item">
+                    <h3>Review</h3>
+                    <p>After approximately 6 months we can review the structure and adjust the role, involvement, and compensation depending on how the project evolves.</p>
+                </div>
+            </div>
+        </section>
 
         <!-- About Section -->
         <section>
